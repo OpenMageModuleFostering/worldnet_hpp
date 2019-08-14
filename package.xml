@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package>
+    <name>WorldNet_HPP</name>
+    <version>1.2.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This module provides a Magento payment method for the WorldNet TPS payment system. It implements payments through the WorldNet TPS Hosted Payment Page (HPP).</summary>
+    <description>This module provides a Magento payment method for the WorldNet TPS payment system. It implements payments through the WorldNet TPS Hosted Payment Page (HPP).
+
+To learn more about the WorldNet TPS Hosted Payment Page, please visit www.WorldNetTPS.com</description>
+    <notes>This module will overwrite your system.xml file.
+
+Once you have added this you will need to go to the admin section of your Magento installation:
+
+Magento Admin -&gt; System -&gt; Configuration
+Click on "Payment Methods" (on the left)
+You should then see "WorldNet TPS (via Payment Page)" appear as a payment method (if not see below). Click on this and select Enabled = "Yes".
+Enter the test Currency, Terminal ID and your "Shared Secret". (These details were supplied by WorldNet TPS.)
+Change the "New order status" to "Awaiting payment via WorldNet TPS".
+Click "Apply" in the top right corner.
+
+N.B. If the module does not appear on the "Payment Methods" page you may have to clear Magento's cache.
+     To do this go to System -&gt; Cache Management, Change "No Change" to "Refresh" and then save the cache settings.
+
+You must then setup the Receipt page URL in the WorldNet TPS Selfcare system. This should be set to:
+"http://www.yoursite.com/index.php/worldnet/standard/successResponse"</notes>
+    <authors><author><name>Kevin Pattison</name><user>auto-converted</user><email>kevin.pattison@worldnettps.com</email></author></authors>
+    <date>2009-08-05</date>
+    <time>14:29:08</time>
+    <contents><target name="mage"><dir name="app"><dir name="code"><dir name="core"><dir name="Mage"><dir name="Sales"><dir name="etc"><file name="config.xml" hash="c21c04d6691e79a0f322d76c135866df"/></dir></dir><dir name="Worldnet"><dir name="Block"><dir name="Standard"><file name="Failure.php" hash="f3e705cf711932100589d3b4c8106c08"/><file name="Form.php" hash="56b33428fc43ae46322dda8e62a3ac76"/><file name="Redirect.php" hash="8b389476af008fc61f9412d4313d41a6"/></dir></dir><dir name="controllers"><file name="StandardController.php" hash="f6fb7c3f70dad5c8686e112348439533"/></dir><dir name="etc"><file name="config.xml" hash="5ad1213b679e6154feaa0901546ce14b"/><file name="system.xml" hash="1bf0cedebed0c2627ce25faa8b53da5a"/></dir><dir name="Helper"><file name="Data.php" hash="b28afe532c421add22571db28ed4bd43"/></dir><dir name="Model"><file name="Config.php" hash="506d6bad68d0d61dabadf98e68443d07"/><file name="Session.php" hash="5ae214b0aad30f6ca5062d958654e99a"/><file name="Standard.php" hash="45a90de2b2cb708264dd3eaee03abbe5"/><dir name="Api"><file name="Debug.php" hash="560d9c6823b9a3f9421dd1db88f6e547"/></dir><dir name="Mysql4"><file name="Setup.php" hash="621ba5546a08ef619bc2c6f7c84b9beb"/><dir name="Api"><file name="Debug.php" hash="96e22a9c503931d85c1e64a360712c3c"/><dir name="Debug"><file name="Collection.php" hash="fba9218bab730ea4e9f161de17c45c1c"/></dir></dir></dir><dir name="Source"><file name="CurrencyAction.php" hash="f5ab5219ea0cfcfbfe8c8b06388d3d75"/><file name="ModeAction.php" hash="898d443ba60d7b19311f51fd23632923"/><file name="PaymentAction.php" hash="8862c80076b4d59c0972da24a95a4c35"/></dir></dir><dir name="nbproject"><file name="project.properties" hash="4aad25e24c83519ab6ea9012d5995504"/><file name="project.xml" hash="78cdc8723b5bff4bf29711d0b7d8e626"/><dir name="private"><file name="private.properties" hash="c425fb8252951c8e34648ed14e4a1b4b"/><file name="private.xml" hash="8db5aa1af9a60c837ae0c674b2111063"/></dir></dir><dir name="sql"><dir name="worldnet_setup"><file name="mysql4-install-0.1.0.php" hash="5715d336662b1012de6c72399ebecea8"/></dir></dir></dir></dir></dir></dir><dir name="design"><dir name="default"><dir name="default"><dir name="layout"><file name="worldnet.xml" hash="6522a5169fee4cf1b44f5f455aff070a"/></dir><dir name="template"><dir name="worldnet"><dir name="standard"><file name="failure.phtml" hash="63ab5c097322c4be7c950ce123f23445"/><file name="form.phtml" hash="710d1167d804c9699166d0c6f4e8deec"/></dir></dir></dir></dir><dir name="modern"><dir name="layout"><file name="worldnet.xml" hash="594665b45f2a42b0fe0900e4b9ede239"/></dir><dir name="template"><dir name="worldnet"><dir name="standard"><file name="failure.phtml" hash="4b83f4b99d5bda8fcc77c00b9b8c5b3a"/><file name="form.phtml" hash="710d1167d804c9699166d0c6f4e8deec"/></dir></dir></dir></dir></dir><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="worldnet.xml" hash="594665b45f2a42b0fe0900e4b9ede239"/></dir><dir name="template"><dir name="worldnet"><dir name="standard"><file name="failure.phtml" hash="4b83f4b99d5bda8fcc77c00b9b8c5b3a"/><file name="form.phtml" hash="710d1167d804c9699166d0c6f4e8deec"/></dir></dir></dir></dir><dir name="modern"><dir name="layout"><file name="worldnet.xml" hash="594665b45f2a42b0fe0900e4b9ede239"/></dir><dir name="template"><dir name="worldnet"><dir name="standard"><file name="failure.phtml" hash="4b83f4b99d5bda8fcc77c00b9b8c5b3a"/><file name="form.phtml" hash="710d1167d804c9699166d0c6f4e8deec"/></dir></dir></dir></dir></dir></dir></dir><dir name="etc"><dir name="modules"><file name="Mage_Worldnet.xml" hash="b27d988cee0846692ec95dc5c6d92e97"/></dir></dir><dir name="locale"><dir name="en_US"><file name="Mage_Worldnet.csv" hash="7de04703ae15e7bb9bd02c511590e767"/></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies/>
+</package>
