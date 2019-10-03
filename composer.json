@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/WorldNet_HPP",
+    "name": "OpenMageModuleFostering\/WorldNet_HPP",
     "type": "magento-module",
     "license": "OSL-v3.0",
     "homepage": "",
     "description": "This module provides a Magento payment method for the WorldNet TPS payment system. It implements payments through the WorldNet TPS Hosted Payment Page (HPP).",
     "authors": [
-    {
-        "name": "Kevin Pattison",
-        "email": "kevin.pattison@worldnettps.com"
-    }
-],
+        {
+            "name": "Kevin Pattison",
+            "email": "kevin.pattison@worldnettps.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
